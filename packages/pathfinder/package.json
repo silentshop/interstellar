@@ -1,0 +1,24 @@
+{
+  "name": "interstellar-pathfinder",
+  "version": "1.0.0",
+  "description": "Utility for finding paths on the Stellar network",
+  "main": "index.js",
+  "dependencies": {
+    "@types/stellar-sdk": "^0.8.6",
+    "js-xdr": "^1.0.4",
+    "pg": "^7.4.3",
+    "stellar-base": "^0.8.3",
+    "stellar-sdk": "^0.10.3",
+    "tweetnacl": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/ws": "^6.0.0",
+    "webpack": "^4.16.5"
+  },
+  "scripts": {
+    "build:dev": "yarn run webpack --config webpack/dev.js --progress",
+    "build:prod": "yarn run webpack --config webpack/prod.js --progress"
+  },
+  "author": "Jack Langston",
+  "license": "ISC"
+}
